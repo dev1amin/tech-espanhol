@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#260844d8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>AlfaTech</title>
+
+    <!-- Disable F12 -->
+    <script>
+      document.addEventListener(
+        "keydown",
+        function (e) {
+          if (
+            e.keyCode == 123 ||
+            (e.ctrlKey && e.shiftKey && e.keyCode == 73)
+          ) {
+            // Prevent F12
+            e.preventDefault();
+          }
+        },
+        true
+      );
+      document.addEventListener(
+        "contextmenu",
+        function (e) {
+          e.preventDefault();
+        },
+        true
+      );
+    </script>
+    <script type="module" crossorigin src="./assets/index-xKG1BbJH.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DtFG1Li0.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
